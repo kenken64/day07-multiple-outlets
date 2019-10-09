@@ -1,9 +1,12 @@
 <mat-toolbar color="primary">
+  <button mat-icon-button (click)="navigateTo('/')">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> 
+  </button>
   <span> Multiple Outlets </span>
   <span class="example-spacer"></span>
   <span> &nbsp;</span>
   <button mat-icon-button (click)="navigateTo('/menu')">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> 
+    <mat-icon aria-hidden="false" aria-label="Example home icon">face</mat-icon> 
   </button>
   <button mat-icon-button (click)="navigateTo('/sub-menu')">
     <mat-icon aria-hidden="false" aria-label="3d_rotation">3d_rotation</mat-icon>
@@ -15,7 +18,7 @@
     <mat-icon aria-hidden="false" aria-label="Example home icon">commute</mat-icon>
   </button>
 </mat-toolbar>
-<p>------ 1 -----------</p>
+<p>-------1-----</p>
 <router-outlet></router-outlet>
-<p>-------2----------</p>
+<p>-------2-----</p>
 <router-outlet name="secondary"></router-outlet>

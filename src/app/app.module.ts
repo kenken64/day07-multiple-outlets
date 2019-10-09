@@ -8,6 +8,8 @@ import { MenuComponent } from './components/menu-component';
 import { SubMenuComponent } from './components/sub-menu-component';
 import { MainContentComponent } from './components/main-content-component';
 import { SubContentComponent } from './components/sub-content-component';
+import { ThirdContentComponent } from './components/third-content.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
@@ -17,7 +19,8 @@ import { MaterialModule } from './material.module';
     MenuComponent,
     SubMenuComponent,
     MainContentComponent,
-    SubContentComponent
+    SubContentComponent,
+    ThirdContentComponent
   ],
   imports: [
     BrowserModule,

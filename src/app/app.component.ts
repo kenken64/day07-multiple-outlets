@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'multiple-outlets';
+  
+
   constructor(private router: Router){
 
   }
@@ -18,6 +21,6 @@ export class AppComponent {
 
   navigateToSecondOutlet(path: string){
     console.log(path);
-    this.router.navigate([{outlets: { secondary: [path] } }]);
+    this.router.navigate([{outlets: { primary: ['sub-menu'], secondary: ['sub-content'] } }]);
   }
 }
